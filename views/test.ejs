@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title><%= title %></title>
+</head>
+<body>
+	<h1><%= title %></h1>
+
+	<h2>프로필 정보</h2>
+	<p>이름: <%= profile.name %></p>
+	<p>학교: <%= profile.school %></p>
+	<p>학번: <%= profile.studentid %></p>
+
+	<h2>좋아하는 음식</h2>
+	<ul>
+	<% profile.foods.forEach(function (food) { %>
+	<li><%= food %></li>
+	<% }); %>
+	</ul>
+
+	<h2>좋아하는 캐릭터</h2>
+	<p><%= profile.character %></p>
+	
+	<img src="https://mblogthumb-phinf.pstatic.net/MjAyNDA4MDRfMjg0/MDAxNzIyNzU1NDc0MTA3.72jR12vhy6UOEIjD18Ku-mw7MqXoNYg.rlBxyJ7Rc9kAXw5uEmixRjCdGQ1JjO9aRhXD7f3Zj6Ag.JPEG/1722755473126.jpg?type=w800"
+	 alt="치이카와" width="150">
+
+
+</body>
+</html>
+
